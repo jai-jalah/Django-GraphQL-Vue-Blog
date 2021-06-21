@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import AuthorLink from '@/components/AuthorLink'
+import AuthorLink from './AuthorLink'
 
 export default {
   name: 'Post',

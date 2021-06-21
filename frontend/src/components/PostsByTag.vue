@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import PostList from '@components/PostList'
+import PostList from './PostList'
 
 export default {
     name: 'PostsByTag',
