@@ -36,4 +36,35 @@ export default {
     },
   },
 }
+
+async created () {
+    const user = await this.$apollo.query({
+        query: gql`query ($username: String!) {
+            authorByUsername(username: $username) {
+                website
+                bio
+                user {
+                    firstName
+                    lastName
+                    username
+                }
+                postSet {
+                    title
+                    subtitle
+                    publishDate
+                    published
+                    metaDescription
+                    slug
+                    tags {
+                        name
+                    }
+                }
+            }
+        }`,
+        variables: {
+            username: this.$route.params.username
+        },
+    })
+    this.author = user.data.authorByUsername
+},
 </script>
