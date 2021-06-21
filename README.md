@@ -1,6 +1,8 @@
 # Django-GraphQL-Vue-Blog
 
-A quick way to Learn GraphQL with Django (with a side of Vue ⛰)
+A quick way to Learn GraphQL with Django (with a side of Vue ⛰). Sorry not sorry for the abysmal lack of styling 🙃
+
+![Screenshot](Screenshot.png)
 
 Side-by-side build of this tutorial: https://realpython.com/python-django-blog/#demo-a-django-blog-admin-a-graphql-api-and-a-vue-front-end
 
@@ -47,18 +49,18 @@ In a new terminal tab:
 
 ### Add a few posts
 
-1. Visit [the Django admin](https://localhost:8000/admin)
+1. Visit ```(https://localhost:8000/admin```
 1. Log in using the superuser you created earlier
 1. Write a few posts, adding authors and tags as desired
 1. Make sure at least one post is `published` (or no posts will appear)
 
 ### View the blog
 
-1. Visit [the blog homepage](https://localhost:8080)
+1. Visit ```(https://localhost:8080)```
 1. Browse the posts, tags, and authors
 
 ### Try the GraphQL API yourself
 
-1. Visit [the GraphiQL interface](https://localhost:8000/graphql)
+1. Visit ```https://localhost:8000/graphql```
 1. View the *Docs* panel on the top right
 1. Create some queries&mdash;the available information should auto-populate!
