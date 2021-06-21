@@ -49,14 +49,14 @@ In a new terminal tab:
 
 ### Add a few posts
 
-1. Visit ```(https://localhost:8000/admin```
+1. Visit ```https://localhost:8000/admin```
 1. Log in using the superuser you created earlier
 1. Write a few posts, adding authors and tags as desired
 1. Make sure at least one post is `published` (or no posts will appear)
 
 ### View the blog
 
-1. Visit ```(https://localhost:8080)```
+1. Visit ```https://localhost:8080)```
 1. Browse the posts, tags, and authors
 
 ### Try the GraphQL API yourself
