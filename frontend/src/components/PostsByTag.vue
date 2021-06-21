@@ -6,46 +6,47 @@
 </template>
 
 <script>
+import gql from 'graphql-tag'
+
 import PostList from './PostList'
 
 export default {
-    name: 'PostsByTag',
-    components: {
-        PostList,
-    },
-    data () {
-        return {
-            posts: null,
-        }
-    },
-}
-
-async created () {
+  name: 'PostsByTag',
+  components: {
+    PostList,
+  },
+  data () {
+    return {
+      posts: null,
+    }
+  },
+  async created () {
     const posts = await this.$apollo.query({
-        query: gql`query ($tag: String!) {
-            postsByTag(tag: $tag) {
-                title
-                subtitle
-                publishDate
-                published
-                metaDescription
-                slug
-                author {
-                    user {
-                        username
-                        firstName
-                        lastName
-                    }
-                }
-                tags {
-                    name
-                }
+      query: gql`query ($tag: String!) {
+        postsByTag(tag: $tag) {
+          title
+          subtitle
+          publishDate
+          published
+          metaDescription
+          slug
+          author {
+            user {
+              username
+              firstName
+              lastName
             }
-        }`,
-        variables: {
-            tag: this.$route.params.tag,
-        },
+          }
+          tags {
+            name
+          }
+        }
+      }`,
+      variables: {
+        tag: this.$route.params.tag,
+      },
     })
     this.posts = posts.data.postsByTag
-},
+  },
+}
 </script>
