@@ -1,6 +1,6 @@
 # Django-GraphQL-Vue-Blog
 
-A quick way to Learn GraphQL with Django (with a side of Vue 😃)
+A quick way to Learn GraphQL with Django (with a side of Vue 😏)
 
 Side-by-side build of this tutorial: https://realpython.com/python-django-blog/#demo-a-django-blog-admin-a-graphql-api-and-a-vue-front-end
 
